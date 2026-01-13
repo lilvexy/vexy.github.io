@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+    <p>{{ site.description }}</p>
+
+    <!-- Navigation -->
+    <nav style="text-align:center; margin:1rem 0;">
+      <a href="{{ site.baseurl }}/" style="margin:0 1rem; text-decoration:none; color:#2c3e50;">Home</a>
+      <a href="{{ site.baseurl }}/about" style="margin:0 1rem; text-decoration:none; color:#2c3e50;">About Me</a>
+      <a href="{{ site.baseurl }}/labs" style="margin:0 1rem; text-decoration:none; color:#2c3e50;">Labs</a>
+      <a href="{{ site.baseurl }}/contact" style="margin:0 1rem; text-decoration:none; color:#2c3e50;">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    {{ content }}
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 {{ site.title }} | <a href="https://github.com/username" target="_blank">GitHub</a></p>
+  </footer>
+</body>
+</html>
